@@ -94,7 +94,6 @@ namespace MergeDataAndDoc
                             break;
                     }
             }
-
             using (StreamReader inputFile = new StreamReader(inputFileName))    //data.txt
             using (StreamReader inputFile2 = new StreamReader(inputFileName2))  //template.txt
             using (StreamWriter outputFile = new StreamWriter(outputFileName)) {   //result.txt
