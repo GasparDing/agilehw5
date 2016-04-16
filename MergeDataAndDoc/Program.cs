@@ -86,7 +86,7 @@ namespace MergeDataAndDoc
                     inputFile2.DiscardBufferedData();
                     inputFile2.BaseStream.Seek(0, SeekOrigin.Begin);
                     inputFile2.BaseStream.Position = 0;
-                    // Let the pointer point to the head of the template file,
+                    // Let the pointer point to the head of the template file
                     // so we can put the input data into the format. 
                 }
             }
@@ -97,7 +97,7 @@ namespace MergeDataAndDoc
             string inputFileName = "data.txt";
             string inputFileName2 = "template.txt";
             string outputFileName = "result.txt";
-            if (args.Length == 3)
+            /*if (args.Length == 3)
                 for (int i = 0; i < 3;i++ )
                     switch (args[i]) {
                         case "data.txt":
@@ -109,7 +109,7 @@ namespace MergeDataAndDoc
                         case "result.txt":
                             outputFileName = args[i];
                             break;
-                    }
+                    }*/
            mergeTheFiles(inputFileName, inputFileName2, outputFileName);
         }
     }
